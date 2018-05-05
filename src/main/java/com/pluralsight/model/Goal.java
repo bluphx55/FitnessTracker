@@ -7,16 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "goals")
 public class Goal {
 
     @Id
     @GeneratedValue
-    @Column(name = "GOAL_ID")
 	private Long id;
 
 	@Range(min = 1, max = 120)
-    @Column(name = "MINUTES")
 	private int minutes;
 
     @OneToMany(mappedBy = "goal", cascade = CascadeType.ALL)
