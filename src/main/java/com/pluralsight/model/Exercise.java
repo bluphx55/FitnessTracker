@@ -44,4 +44,12 @@ public class Exercise {
     public void setGoal(Goal goal) {
         this.goal = goal;
     }
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 }

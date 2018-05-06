@@ -16,7 +16,7 @@ public class Goal {
 	@Range(min = 1, max = 120)
 	private int minutes;
 
-    @OneToMany(mappedBy = "goal", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "goal", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Exercise> exercises = new ArrayList<Exercise>();
 
 	public int getMinutes() {
