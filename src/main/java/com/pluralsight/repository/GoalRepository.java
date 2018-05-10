@@ -1,6 +1,7 @@
 package com.pluralsight.repository;
 
 import com.pluralsight.model.Goal;
+import com.pluralsight.model.GoalReport;
 
 import java.util.List;
 
@@ -10,4 +11,5 @@ public interface GoalRepository {
 
     List<Goal> loadAll();
 
+    List<GoalReport> findAllGoalReports();
 }
